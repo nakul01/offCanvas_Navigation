@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 9]> <html lang="en" class="no-js ie ltie9"><![endif]-->
+<!--[if gte IE 9]> <html lang="en" class="no-js ie"><![endif]-->
+<!--[if !IE]><!--><html lang="en" class="no-js">  <!--<![endif]-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/base.css" rel="stylesheet" type="text/css">
+  <script src="js/modernizr.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="masthead">
+      <a href="#navigation" class="showNav js-togglesOffCanvas">
+        <span class="visuallyHidden">Show Nav</span>
+      </a>
+      <h1>Navigation Off Canvas UI - Great for Mobiles </h1>
+    </div>
+  </header>
+  
+  <section>
+    <div class="mainContent">
+      <h3> The Javascript </h3>
+      <ul>
+        <li>1. Define some key/value pairs wrapped in a NAV object </li>
+        <li>2. Within the object name some function methods that are descriptive</li>
+        <li>3. clear: We need to clear any inline styles or or remove any open menus as default </li>
+        <li>4. toggle: Toggle the main menu and open it out </li>
+        <li>5. toggleSubNav: Toggle any sub Nav within the main nav </li>
+        <li>6. On small screens i.e mobile, add the CSS animations to the body </li>
+        <li>7. Bind the 2 events, the main menu off canvas and the sliding subNav</li>
+        <li>8. Kick everything off with the init(). Remember the javascript is written in a module pattern, see CSS tricks <a href="https://css-tricks.com/how-do-you-structure-javascript-the-module-pattern-edition/"> click here</a></li>
+
+      </ul>
+      
+    </div>
+  </section>
+  
+  <footer>
+    <div class="mainNav">
+      <button class="js-togglesOffCanvas closeOffCanvas">
+        <span class="visuallyHidden">Close Menu</a>
+      </button>
+      <nav id="navigation">
+        <ul class="mainMenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="page.html" class="js-togglesSubMenu">Products</a>
+            <ul class="subMenu">
+              <li><a href="page.html">Widgets</a></li>
+              <li><a href="page.html">Gizmos</a></li>
+              <li><a href="page.html">Gadgets</a></li>
+              <li><a href="page.html">Thingamadoodles</a></li>
+              <li><a href="page.html">WhizBangs</a></li>
+            </ul>
+          </li>
+          <li><a href="page.html">Services</a></li>
+          <li><a href="page.html">About</a></li>
+          <li><a href="page.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/mediaCheck.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/nav-finished.js"></script>
+</body>
+</html>
